@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import KFold
-import shap
 from src.constants import RANDOM_SEED
 from src.data_processing import feature_scaling_standardization
 
@@ -66,7 +65,7 @@ def evaluate_models_with_kfold(X, y, model_types, k=5, alpha = 1.0, l1_ratio = 0
         X_train_scaled, X_test_scaled = feature_scaling_standardization(X_train, X_test)
 
         for model_type in model_types:
-            print(f"Training {model_type.capitalize()} model...")
+            print(f"Training {model_type} model...")
             model = train_model(X_train_scaled, y_train, model_type, alpha, l1_ratio)
 
             y_train_pred = model.predict(X_train_scaled)

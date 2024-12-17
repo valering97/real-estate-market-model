@@ -47,7 +47,7 @@ def plot_residuals_and_scatter(y_true_fold, y_pred_fold, model_type, fold = None
     mean_residuals = np.mean(residuals)
     std_residuals = np.std(residuals)
     
-    fig, axs = plt.subplots(1, 2, figsize=(12, 6))
+    fig, axs = plt.subplots(1, 2, figsize=(12, 8))
     
     # Plot residuals distribution
     sns.histplot(residuals, kde=True, bins=30, ax=axs[0])

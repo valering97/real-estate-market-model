@@ -47,7 +47,7 @@ def plot_residuals_and_scatter(y_true_fold, y_pred_fold, model_type, fold = None
     mean_residuals = np.mean(residuals)
     std_residuals = np.std(residuals)
     
-    fig, axs = plt.subplots(1, 2, figsize=(14, 6))
+    fig, axs = plt.subplots(1, 2, figsize=(12, 6))
     
     # Plot residuals distribution
     sns.histplot(residuals, kde=True, bins=30, ax=axs[0])
@@ -76,7 +76,7 @@ def plot_residuals_and_scatter(y_true_fold, y_pred_fold, model_type, fold = None
 
 
 # Function to plot coefficients vs alpha values
-def plot_coefficients_vs_alpha(X_train, y_train, X_test, y_test, alpha_values, model_types=['ridge', 'lasso', 'elasticnet'], l1_ratio=0.5):
+def plot_coefficients_vs_alpha(X_train, y_train, alpha_values, model_types=['ridge', 'lasso', 'elasticnet'], l1_ratio=0.5):
     coefficients_dict = {model_type: [] for model_type in model_types}
 
     for alpha in alpha_values:

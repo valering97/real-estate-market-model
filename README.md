@@ -1,6 +1,8 @@
 # RealEstateAI Solutions: Model for a Real Estate Market
 
 ## Project Description
+This repository is the third project of the master's degree in AI Engineering with Profession AI.
+
 RealEstateAI Solutions aims to optimize real estate price estimation using advanced regularization techniques in linear regression models. In the real estate sector, accurate property price predictions are crucial for making strategic decisions. However, traditional linear regression models can suffer from overfitting, compromising the reliability of predictions. This project explores and implements effective regularization methods to address these challenges.
 
 The goal is to provide more accurate and reliable price predictions, reducing the risk of overfitting and improving the model's generalization capability. This project seeks to support real estate agents and investors in making informed decisions, enhancing their competitiveness in the market.
